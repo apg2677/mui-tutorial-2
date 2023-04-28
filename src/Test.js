@@ -13,6 +13,8 @@ import {
   FormLabel,
   RadioGroup,
   Radio,
+  AppBar,
+  Toolbar,
 } from "@mui/material";
 
 export default function Test() {
@@ -36,6 +38,18 @@ export default function Test() {
   };
   return (
     <div>
+      <AppBar>
+        <Toolbar>
+          <Typography>LOGO</Typography>
+          <Button
+            variant="contained"
+            sx={{ marginLeft: "auto" }}
+            color="warning"
+          >
+            Hello
+          </Button>
+        </Toolbar>
+      </AppBar>
       <form
         onSubmit={handleSubmit}
         style={{ display: "flex", flexDirection: "column" }}
