@@ -1,9 +1,10 @@
-import Test from "./Test";
-import CheckBoxes from "./CheckBoxes";
+import TabDemo from "./TabDemo";
+import MenuDemo from "./MenuDemo";
+
 function App() {
   return (
     <div>
-      <Test />
+      <MenuDemo />
     </div>
   );
 }
