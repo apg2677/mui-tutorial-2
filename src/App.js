@@ -6,7 +6,7 @@ import Tabs2 from "./Tabs2";
 function App() {
   return (
     <div>
-      <Tabs2 />
+      <MenuDemo2 />
     </div>
   );
 }
