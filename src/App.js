@@ -3,10 +3,13 @@ import MenuDemo from "./MenuDemo";
 import CardDemo from "./CardDemo";
 import MenuDemo2 from "./MenuDemo2";
 import Tabs2 from "./Tabs2";
+import Cards2 from "./Cards2";
+import Dialog1 from "./Dialog1";
+import Modal1 from "./Modal1";
 function App() {
   return (
     <div>
-      <MenuDemo2 />
+      <Modal1 />
     </div>
   );
 }
