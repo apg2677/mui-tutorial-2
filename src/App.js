@@ -9,10 +9,11 @@ import Modal1 from "./Modal1";
 import Link1 from "./Link1";
 import Container1 from "./Container1";
 import List1 from "./List1";
+import Accordian1 from "./Accordian1";
 function App() {
   return (
     <div>
-      <List1 />
+      <Accordian1 />
     </div>
   );
 }
