@@ -10,10 +10,11 @@ import Link1 from "./Link1";
 import Container1 from "./Container1";
 import List1 from "./List1";
 import Accordian1 from "./Accordian1";
+import Autocomplete1 from "./Autocomplete1";
 function App() {
   return (
     <div>
-      <Accordian1 />
+      <Autocomplete1 />
     </div>
   );
 }
