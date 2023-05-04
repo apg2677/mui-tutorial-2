@@ -28,7 +28,7 @@ const List1 = () => {
             {array.map((item, i) => {
               return (
                 <ListItem divider key={i}>
-                  <ListItemButton>
+                  <ListItemButton onClick={() => setOpen(false)}>
                     <ListItemText primary={item} />
                   </ListItemButton>
                 </ListItem>
