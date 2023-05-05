@@ -14,10 +14,11 @@ import Autocomplete1 from "./Autocomplete1";
 import Drawer1 from "./Drawer1";
 import Alert1 from "./Alert1";
 import SnackBar1 from "./SnackBar1";
+import Progress1 from "./Progress1";
 function App() {
   return (
     <div>
-      <SnackBar1 />
+      <Progress1 />
     </div>
   );
 }
