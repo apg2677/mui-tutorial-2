@@ -11,10 +11,13 @@ import Container1 from "./Container1";
 import List1 from "./List1";
 import Accordian1 from "./Accordian1";
 import Autocomplete1 from "./Autocomplete1";
+import Drawer1 from "./Drawer1";
+import Alert1 from "./Alert1";
+import SnackBar1 from "./SnackBar1";
 function App() {
   return (
     <div>
-      <Autocomplete1 />
+      <SnackBar1 />
     </div>
   );
 }
