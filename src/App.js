@@ -1,26 +1,58 @@
-import TabDemo from "./TabDemo";
-import MenuDemo from "./MenuDemo";
-import CardDemo from "./CardDemo";
-import MenuDemo2 from "./MenuDemo2";
-import Tabs2 from "./Tabs2";
-import Cards2 from "./Cards2";
-import Dialog1 from "./Dialog1";
-import Modal1 from "./Modal1";
-import Link1 from "./Link1";
-import Container1 from "./Container1";
-import List1 from "./List1";
-import Accordian1 from "./Accordian1";
-import Autocomplete1 from "./Autocomplete1";
-import Drawer1 from "./Drawer1";
-import Alert1 from "./Alert1";
-import SnackBar1 from "./SnackBar1";
-import Progress1 from "./Progress1";
-import Rating1 from "./Rating1";
-import ImageList1 from "./ImageList1";
+import { TextField, Button, Typography } from "@mui/material";
+import { useForm } from "react-hook-form";
+
 function App() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  console.log(errors);
   return (
     <div>
-      <ImageList1 />
+      <form
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          game: 5,
+          border: "1px solid black",
+          width: 200,
+        }}
+        onSubmit={handleSubmit((data) => console.log(data))}
+      >
+        <TextField
+          helperText={
+            Boolean(errors.email) ? (
+              <Typography>Invalid Email</Typography>
+            ) : null
+          }
+          error={Boolean(errors.email)}
+          {...register("email", {
+            validate: (val) =>
+              /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(val),
+          })}
+        />
+        <TextField
+          helperText={
+            Boolean(errors.password) ? (
+              <Typography>Min length is 6</Typography>
+            ) : null
+          }
+          type="password"
+          error={Boolean(errors.password)}
+          {...register("password", {
+            minLength: 6,
+            required: true,
+          })}
+        />
+        <Button
+          disabled={Boolean(errors.email) || Boolean(errors.password)}
+          variant="contained"
+          type="submit"
+        >
+          Submit
+        </Button>
+      </form>
     </div>
   );
 }
