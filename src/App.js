@@ -16,10 +16,11 @@ import Alert1 from "./Alert1";
 import SnackBar1 from "./SnackBar1";
 import Progress1 from "./Progress1";
 import Rating1 from "./Rating1";
+import ImageList1 from "./ImageList1";
 function App() {
   return (
     <div>
-      <Rating1 />
+      <ImageList1 />
     </div>
   );
 }
